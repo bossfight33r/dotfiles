@@ -1,0 +1,5 @@
+--theme="zenburn"
+--style="header-filename,header-filesize,grid,numbers,changes,snip"
+--italic-text=always
+--tabs=4
+--pager="less -RF"
