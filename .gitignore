@@ -1,4 +1,5 @@
 .DS_Store
 gh/
-btop/
+ssh/known_hosts
+ssh/id_*
 setup/.env

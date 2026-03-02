@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -e
+
+DOTFILES="$HOME/.config/dotfiles"
+
+case "$1" in
+	install) make -C "$DOTFILES" install ;;
+	update)  make -C "$DOTFILES" update ;;
+	edit)    cd "$DOTFILES" && $EDITOR . ;;
+	pull)    git -C "$DOTFILES" pull --rebase ;;
+	push)    git -C "$DOTFILES" push ;;
+	status)  git -C "$DOTFILES" status ;;
+	diff)    git -C "$DOTFILES" diff ;;
+	*)
+		echo "usage: dot <install|update|edit|pull|push|status|diff>"
+		exit 1
+		;;
+esac
