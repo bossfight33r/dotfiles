@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# open file in nvim, but skip if it's a git diff viewer
+if [[ "$1" == *"COMMIT_EDITMSG"* ]] || [[ "$1" == *"MERGE_MSG"* ]]; then
+	nvim "+set ft=gitcommit" "$1"
+else
+	nvim "$1"
+fi

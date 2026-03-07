@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# show what's listening on a port
+# usage: port 8080
+lsof -nP -iTCP:"$1" -sTCP:LISTEN

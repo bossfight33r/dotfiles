@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+[[ -n "$(command -v "$1")" ]]
