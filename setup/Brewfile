@@ -1,5 +1,3 @@
-# brew bundle --file=~/.config/setup/Brewfile
-
 brew "starship"
 brew "zoxide"
 brew "fzf"
@@ -24,16 +22,4 @@ brew "neovim"
 brew "uv"
 brew "poetry"
 brew "nmap"
-
-cask "kitty"
-cask "visual-studio-code"
-cask "orbstack"
-cask "rectangle"
-cask "iina"
-cask "obsidian"
-cask "telegram"
-cask "bitwarden"
-cask "termius"
-cask "ubersicht"
-
-mas "Lightshot Screenshot", id: 526298438
+brew "delta"
